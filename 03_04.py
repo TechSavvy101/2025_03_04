@@ -1,7 +1,12 @@
 #1. Write a function to take user input and display it.
 #Question: Write a Python function named get_and_display_input() that:
 #question 1
+def get_and_display_input(prompt):
+    user_input = input(prompt)
+    return user_input
 
+user_name = get_and_display_input("Enter your name: ")
+print(f"Hello, {user_name}")
 #question 2 Kitso
 def sum_two_numbers(a, b):
     return a + b
