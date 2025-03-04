@@ -1,6 +1,11 @@
 #question 1 Ofentse R
-def get_and_display_input(name='Sam'):
-    print(f'Afternoon {name}')
+def get_and_display_input(prompt):
+    user_input= input(prompt)
+    return user_input
+
+user_name = get_and_display_input("Enter your name")
+print("Hello" (user_name)) 
+    
 
 #question 2 
 
@@ -13,3 +18,62 @@ def get_and_display_input(name='Sam'):
 #question 6 Tshiamo Mafojane
 
 #question 7 Tshiamo Mafojane
+#1. Write a function to take user input and display it.
+#Question: Write a Python function named get_and_display_input() that:
+#question 1
+
+#question 2 Kitso
+
+#question 3 Kitso
+
+
+
+
+
+
+#4. Write a function to read a file and display its content.  [ THANDO GAMA ]
+
+#Question: Write a function named read_from_file() that:
+#Opens user_input.txt.
+#Reads and displays the content.
+#Handles errors if the file doesn’t exist.
+
+def read_from_file():
+    try:
+        with open('user_input.txt', 'r') as file:
+            content = file.read()
+            print(content)
+    except FileNotFoundError:
+        print("The file 'user_input.txt' does not exist.")
+
+
+
+
+#5. Write a function to append user input to an existing file. [ THANDO GAMA ]
+
+#Question: Write a function named append_to_file() that:
+
+#Takes a string input from the user.
+#Appends it to user_input.txt without overwriting previous content.
+#Displays a message confirming the update.
+
+def append_to_file():
+    user_input = input("Enter text to append: ")
+    with open('user_input.txt', 'a') as file:
+        file.write(user_input + '\n')
+    print("The content has been successfully appended to 'user_input.txt'.")
+
+
+
+
+
+
+
+#question 6 Tshiamo Mafojane
+Square = lambda x: x ** 2
+num = int(input("so like enter please enter the number to square please brother: "))
+print("Square:", Square(num))
+
+#question 7 Tshiamo Mafojane 
+filter_even_numbers = lambda numbers: list(filter(lambda x: x % 2 != 0, numbers))
+nums = 
