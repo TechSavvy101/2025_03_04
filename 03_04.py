@@ -71,7 +71,7 @@ def append_to_file():
 
 #question 6 Tshiamo Mafojane
 
-#question 7 Tshiamo Mafojane
+
 Square = lambda x: x ** 2
 num = int(input("so like enter please enter the number to square please brother: "))
 print("Square:", Square(num))
