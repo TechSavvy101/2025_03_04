@@ -30,6 +30,40 @@ print("Hello" (user_name))
 
 
 
+#1. Write a function to take user input and display it.
+#Question: Write a Python function named get_and_display_input() that:
+#question 1
+def get_and_display_input(prompt):
+    user_input = input(prompt)
+    return user_input
+
+user_name = get_and_display_input("Enter your name: ")
+print(f"Hello, {user_name}")
+#question 2 Kitso
+def sum_two_numbers(a, b):
+    return a + b
+
+a = int(input("please enter your first value"))
+b = int(input("please enter your second value"))
+    
+result = sum_two_numbers(a, b)
+print(result)
+
+
+#question 3 Kitso
+def save_to_file():
+
+    user_input = input("Please enter the text you want to save to the file: ")
+    
+
+    with open("user_input.txt", "w") as file:
+        file.write(user_input)
+    
+    
+    print("Your input has been saved to user_input.txt.")
+
+
+save_to_file()
 
 #4. Write a function to read a file and display its content.  [ THANDO GAMA ]
 
@@ -47,8 +81,11 @@ def read_from_file():
         print("The file 'user_input.txt' does not exist.")
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 65b933cb5b64192de5a51de036d89f0307c61a28
 #5. Write a function to append user input to an existing file. [ THANDO GAMA ]
 
 #Question: Write a function named append_to_file() that:
@@ -70,10 +107,20 @@ def append_to_file():
 
 
 #question 6 Tshiamo Mafojane
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 65b933cb5b64192de5a51de036d89f0307c61a28
 Square = lambda x: x ** 2
 num = int(input("so like enter please enter the number to square please brother: "))
 print("Square:", Square(num))
 
 #question 7 Tshiamo Mafojane 
 filter_even_numbers = lambda numbers: list(filter(lambda x: x % 2 != 0, numbers))
+<<<<<<< HEAD
 nums = 
+=======
+nums = list(map(int, input("buddy enter the numbers but use space inbetween then. MAKE SURE!!: ".split())))
+print ("de Filtured odd numbers :) :", filter_even_numbers(nums))
+>>>>>>> 65b933cb5b64192de5a51de036d89f0307c61a28
