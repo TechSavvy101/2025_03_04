@@ -12,5 +12,10 @@ def read_from_file():
 #question 5
 
 #question 6 Tshiamo Mafojane
+Square = lambda x: x ** 2
+num = int(input("so like enter please enter the number to square please brother: "))
+print("Square:", Square(num))
 
-#question 7 Tshiamo Mafojane
+#question 7 Tshiamo Mafojane 
+filter_even_numbers = lambda numbers: list(filter(lambda x: x % 2 != 0, numbers))
+nums = 
