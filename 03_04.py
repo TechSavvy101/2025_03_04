@@ -1,3 +1,5 @@
+#1. Write a function to take user input and display it.
+#Question: Write a Python function named get_and_display_input() that:
 #question 1
 
 #question 2 Kitso
@@ -28,10 +30,41 @@ save_to_file()
 
 
 
+#4. Write a function to read a file and display its content.  [ THANDO GAMA ]
 
-#question 4
+#Question: Write a function named read_from_file() that:
+#Opens user_input.txt.
+#Reads and displays the content.
+#Handles errors if the file doesn’t exist.
 
-#question 5
+def read_from_file():
+    try:
+        with open('user_input.txt', 'r') as file:
+            content = file.read()
+            print(content)
+    except FileNotFoundError:
+        print("The file 'user_input.txt' does not exist.")
+
+
+#5. Write a function to append user input to an existing file. [ THANDO GAMA ]
+
+#Question: Write a function named append_to_file() that:
+
+#Takes a string input from the user.
+#Appends it to user_input.txt without overwriting previous content.
+#Displays a message confirming the update.
+
+def append_to_file():
+    user_input = input("Enter text to append: ")
+    with open('user_input.txt', 'a') as file:
+        file.write(user_input + '\n')
+    print("The content has been successfully appended to 'user_input.txt'.")
+
+
+
+
+
+
 
 #question 6 Tshiamo Mafojane
 
