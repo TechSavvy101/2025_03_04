@@ -56,4 +56,5 @@ print("Square:", Square(num))
 
 #question 7 Tshiamo Mafojane 
 filter_even_numbers = lambda numbers: list(filter(lambda x: x % 2 != 0, numbers))
-nums = 
+nums = list(map(int, input("buddy enter the numbers but use space inbetween then. MAKE SURE!!: ".split())))
+print ("de Filtured odd numbers :) :", filter_even_numbers(nums))
