@@ -8,6 +8,6 @@
 
 #question 5
 
-#question 6
+#question 6 Tshiamo Mafojane
 
-#question 7
+#question 7 Tshiamo Mafojane
