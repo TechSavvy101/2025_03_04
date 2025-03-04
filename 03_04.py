@@ -28,8 +28,6 @@ def save_to_file():
 
 save_to_file()
 
-
-
 #4. Write a function to read a file and display its content.  [ THANDO GAMA ]
 
 #Question: Write a function named read_from_file() that:
@@ -69,3 +67,11 @@ def append_to_file():
 #question 6 Tshiamo Mafojane
 
 #question 7 Tshiamo Mafojane
+Square = lambda x: x ** 2
+num = int(input("so like enter please enter the number to square please brother: "))
+print("Square:", Square(num))
+
+#question 7 Tshiamo Mafojane 
+filter_even_numbers = lambda numbers: list(filter(lambda x: x % 2 != 0, numbers))
+nums = list(map(int, input("buddy enter the numbers but use space inbetween then. MAKE SURE!!: ".split())))
+print ("de Filtured odd numbers :) :", filter_even_numbers(nums))
